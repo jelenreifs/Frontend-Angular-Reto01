@@ -1,0 +1,448 @@
+/* TIPOGRAFÍA */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  line-height: 1.35rem;
+}
+
+/* COLORS */
+.bg-dark {
+  background-color: #222222 !important;
+}
+
+.bg-primary {
+  background-color: #00bcd4 !important;
+}
+
+.bg-primary-dark {
+  background-color: #006064;
+}
+
+.bg-primary-light {
+  background-color: #e3f2fd;
+}
+
+.bg-secondary {
+  background-color: #ad1457 !important;
+}
+
+.bg-secondary-dark {
+  background-color: #790d3c;
+}
+
+/* FORMULARIO */
+
+.form-group label {
+  color: #fff;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: .35rem;
+}
+
+/* BUTTONS */
+a.bg-primary:hover,
+a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #00bcd4 !important;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  font-size: 0.813rem;
+  text-transform: uppercase;
+  line-height: 1rem;
+  border-radius: 5rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out,
+  border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+  color: #000;
+  text-transform: uppercase;
+  background-color: #00bcd4;
+  border-color: #00bcd4;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #006064;
+  border-color: #006064;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #333;
+  background-clip: padding-box;
+  border: 1px solid #666;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+/* GENERALES */
+.nav-wrapper,
+.section-wrapper,
+.footer-wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.section-title h2 {
+  font-size: 1.75rem;
+  font-weight: 300 !important;
+  padding: 2rem 0 0.65rem;
+  text-align: center;
+  color: #ccc !important;
+}
+
+.section-title h2 span {
+  font-weight: 700 !important;
+  color: #fff;
+}
+
+
+/* HEADER */
+header .navbar-brand {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+header .navbar-brand img {
+  max-width: 125px;
+}
+
+header .nav-wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+header .navbar-collapse {
+  flex-grow: 0;
+}
+
+header nav {
+  height: 4.65rem;
+}
+
+header .nav-item {
+  height: 4.65rem;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+header .nav-item:hover {
+  background-color: #e3f2fd;
+}
+
+header .nav-link {
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+
+header .navbar-nav .active > .nav-link,
+header .navbar-nav .nav-link.active,
+header .nav-item.active {
+  background-color: #00bcd4;
+}
+
+header .navbar-collapse {
+  background: #fff;
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  header .navbar-collapse {
+    position: absolute;
+    z-index: 10;
+    top: 4.65rem;
+    width: 100%;
+    left: 0%;
+    right: 0%;
+    -webkit-box-shadow: 0px 10px 11px -8px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 0px 10px 11px -8px rgba(0, 0, 0, 0.18);
+    box-shadow: 0px 10px 11px -8px rgba(0, 0, 0, 0.18);
+  }
+}
+
+
+
+/* ABOUT */
+.about .description {
+  padding: 2rem 2em 1rem;
+  text-align: justify;
+  color: #000;
+}
+
+.about img {
+  max-width: 200px;
+}
+
+@media (max-width: 768px) {
+  .about img {
+    display: none;
+  }
+}
+
+
+
+/* SECCIÓN FORMACIÓN y EXPERIENCIA */
+.experience-tabs {
+  margin-top: 1rem;
+}
+
+.experience-tabs .nav-tabs .nav-item.show .nav-link,
+.experience-tabs .nav-tabs .nav-link.active {
+  color: #00bcd4;
+  background-color: transparent;
+  border-color: transparent transparent #00bcd4;
+  border-bottom: 4px solid !important;
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.experience-tabs .nav-tabs .nav-link {
+  border-bottom: 1px solid #006064;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+  color: #00bcd4;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.experience-tabs .nav-tabs .nav-link:hover {
+  border-bottom: 1px solid #00bcd4;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  padding: 8px 16px;
+}
+
+.experience-tabs a {
+  color: #00bcd4;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.experience-tabs .tab-content {
+  color: #fff;
+  background-color: transparent;
+}
+
+.experience-tabs .period p {
+  background-color: #006064;
+  padding: 0.35rem 1rem;
+  width: max-content;
+  font-size: 0.938rem;
+  font-weight: 300 !;
+}
+
+.experience-tabs .empresa,
+.experience-tabs .formacion {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.experience-tabs .cargo,
+.experience-tabs .academia {
+  color: #00bcd4;
+  font-size: 0.875rem;
+  font-weight: 300;
+  margin-bottom: 0.35rem;
+}
+
+.experience-tabs #tab-training span.separador {
+  background: transparent url("../images/ico_formacion.svg") no-repeat 50% 50%;
+  background-size: auto;
+  background-size: auto;
+  background-size: 16px;
+  width: 32px;
+  display: inline-block;
+}
+
+.experience-tabs .otras-formaciones {
+  display: flex;
+  justify-content: center;
+  background-color: #006064;
+  width: 85%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.experience-tabs .otras-formaciones li {
+  list-style: url("../images/ico_formacion_blanco.svg");
+  font-size: 1rem;
+  line-height: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.experience-tabs .otras-formaciones .section-title h4 {
+  margin: 2rem 0 1.25rem;
+  font-weight: 600;
+}
+
+/* FOOTER */
+
+footer {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+}
+
+footer ul img {
+  width: 22px;
+}
+
+footer .social img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.25rem;
+  padding: 10px;
+  border: 1px solid #006064;
+}
+
+footer .social:last-child {
+  margin-right: 0;
+}
+
+footer .social img:hover {
+  background-color: #00bcd4;
+  border: 1px solid #00bcd4;
+}
+
+footer .copyright {
+  font-size: 0.75rem;
+}
+
+/* PROYECTO DESTACADO */
+
+.technology {
+  list-style: none;
+  padding-left: 0;
+}
+
+.technology li {
+  display: flex;
+  align-items: center;
+  margin-top: 0.35rem;
+}
+
+.technology li p {
+  margin: 0;
+}
+
+.technology li img {
+  width: 42px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 0.45rem;
+}
+
+.modal-body .logos-tecnologias img {
+  width: 32px;
+}
+
+.single-portfolio {
+  margin-bottom: 1rem;
+}
+
+.single-portfolio a:hover {
+  text-decoration: none;
+}
+
+.p-inner {
+  margin: 1rem 0 2rem;
+}
+
+.p-inner h4 {
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+.p-inner .cat {
+  font-size: 0.875rem;
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+/* CONTACTO */
+.site-form {
+  padding-left: 2rem;
+}
+
+.contact-links {
+  padding-right: 2rem;
+}
+
+@media (max-width: 991px) {
+  .site-form {
+    padding-left: 2rem;
+  }
+
+  .contact-links {
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .site-form,
+  .contact-links {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.contact-links {
+  margin-top: 1.65rem;
+}
+
+.contact-links ul {
+  padding-left: 0;
+}
+
+.contact-links li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.65rem;
+}
+
+.contact-links img {
+  width: 42px;
+}
+
+.contact-links a {
+  font-size: 0.875rem;
+  color: #00bcd4 !important;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  color: #00bcd4;
+  text-decoration: underline;
+}
+
